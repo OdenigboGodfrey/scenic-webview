@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"  
+            NavigationPage.HasNavigationBar="False"
+            BarBackgroundColor="#fff"
+            android:TabbedPage.IsSmoothScrollEnabled="True"
+            android:TabbedPage.BarItemColor="#ccc"
+            android:TabbedPage.BarSelectedItemColor="#036DF8"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="ScenicPlots.NavPage"
+            xmlns:local="clr-namespace:ScenicPlots">
+
+    <local:ContainerPage  Icon="book1.png"/>
+    <local:StoriesPage Icon="book2.png"/>
+    <local:WalletPage  Icon="book3.png" />
+    <local:ProfilePage  Icon="book4.png" />
+    <local:MorePage  Icon="book5.png" />
+</TabbedPage>

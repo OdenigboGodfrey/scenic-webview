@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScenicPlots.LandingPage"
+             BackgroundImage="bg.png">
+    <Grid HorizontalOptions="FillAndExpand"
+          VerticalOptions="FillAndExpand" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="0*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        
+        <Image Source="logowhite.png"
+               Grid.Row="2" 
+               HorizontalOptions="Center"
+               Grid.ColumnSpan="2"/>
+
+        <Button 
+                x:Name="_SignUp"
+                Grid.ColumnSpan="2" 
+                Grid.Row="3"
+                Text="SIGN UP"
+                TextColor="#036DF8"
+                HorizontalOptions="Center"
+                WidthRequest="250"
+                BackgroundColor="#fff"
+                BorderRadius="10"
+                Clicked="_signup_Clicked"
+                Margin="0,5,0,5"
+                />
+        <Button 
+                x:Name="_Login"
+                Grid.ColumnSpan="2"
+                Grid.Row="4"
+                Text="LOGIN"
+                TextColor="#fff"
+                WidthRequest="250"
+                HorizontalOptions="Center"
+                BackgroundColor="#036DF8"
+                BorderRadius="10"
+                Clicked="_logIn_Clicked"
+                Margin="0,5,0,5"
+            
+                />
+
+    </Grid>
+</ContentPage>

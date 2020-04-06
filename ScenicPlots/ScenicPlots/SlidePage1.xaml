@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScenicPlots.SlidePage1" >
+    <Grid
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        >
+        <Image Source="one.jpg" 
+            Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"/>
+        <StackLayout VerticalOptions="End" Margin="0,0,0,10">
+            <Grid>
+                <Button BackgroundColor="Transparent" 
+                    TextColor="{StaticResource appcolor}" 
+                    Grid.Row="0" 
+                    Grid.Column="0"
+                    Text="Skip"
+                    Clicked="_Register_page"
+                    />
+                <Button BackgroundColor="Transparent"  
+                    Grid.Row="0" 
+                    Grid.Column="3"
+                    Clicked="_Slide1_clicked"
+                    TextColor="{StaticResource appwhite}"
+                    Text="Next"/>
+            </Grid>
+        </StackLayout>
+    </Grid>
+    
+    <!--<StackLayout >
+        <StackLayout VerticalOptions="FillAndExpand" >
+            
+        </StackLayout>
+        <StackLayout VerticalOptions="End">
+        <Grid >
+            <Button BackgroundColor="Transparent" 
+                    TextColor="{StaticResource appcolor}" 
+                    Clicked="_Register_page" 
+                    Grid.Row="0" 
+                    Grid.Column="0" 
+                    Text="Skip"/>
+            <Button BackgroundColor="Transparent"  
+                    Grid.Row="0" 
+                    Grid.Column="2" 
+                    Clicked="_Slide1_clicked" 
+                    Text="Next"/>
+        </Grid>
+    </StackLayout>
+    </StackLayout>
+-->
+</ContentPage>

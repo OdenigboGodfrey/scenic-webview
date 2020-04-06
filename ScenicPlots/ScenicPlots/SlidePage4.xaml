@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScenicPlots.SlidePage4" 
+             >
+    <Grid
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        >
+        <Image x:Name="_Four"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               Aspect="AspectFill"/>
+
+        <StackLayout VerticalOptions="End" Margin="0,0,0,10" WidthRequest="120">
+            <Grid >
+                <Button BackgroundColor="Transparent"  
+                        Grid.Row="0" 
+                        Grid.Column="2"
+                        TextColor="{StaticResource appwhite}"
+                        Clicked="Button_Clicked" 
+                        WidthRequest="120"
+                        Text="Register Now"/>
+            </Grid>
+        </StackLayout>
+    </Grid>
+</ContentPage>

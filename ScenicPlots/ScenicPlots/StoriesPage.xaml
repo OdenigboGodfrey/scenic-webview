@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="ScenicPlots.StoriesPage">
+    <StackLayout x:Name="_ParentStack">
+        <!--<WebView
+            x:Name="_WebView"
+            Source="http://192.168.0.201:3000"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            
+            >#FF0617
+        </WebView>-->
+        <Frame
+            x:Name="_Frame"
+            HasShadow="False"
+            CornerRadius="0"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="CenterAndExpand"
+            IsVisible="False"
+            Padding="10"
+            BackgroundColor="Transparent"
+            >
+            <Frame
+                CornerRadius="0"
+                Padding="0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="Transparent"
+                >
+                <StackLayout
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    BackgroundColor="Transparent"
+                    >
+                    <Image
+                        x:Name="_Error"
+                        Aspect="AspectFit"
+                        WidthRequest="120"
+                        HeightRequest="120"
+                        />
+                    <Label
+                        Text=":( Oops"
+                        FontSize="Large"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Margin="0,0,0,10"
+                        />
+                    <Label
+                        x:Name="_Label"
+                        Text="No Internet Connection. Please try again when there is an active connection."
+                        FontSize="Medium"
+                        VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"
+                        Margin="10"
+                        />
+                    <Button
+                        x:Name="_TryAgain"
+                        Text="Try Again"
+                        WidthRequest="120"
+                        HeightRequest="40"
+                        Margin="0,10,0,0"
+                        TextColor="{StaticResource appcolor}"
+                        BackgroundColor="Transparent"
+                        Clicked="_TryAgain_Clicked"
+                        />
+                </StackLayout>
+            </Frame>
+        </Frame>
+        <WebView
+            x:Name="_GifHolder"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            IsVisible="False"
+            />
+    </StackLayout>
+</ContentPage>
